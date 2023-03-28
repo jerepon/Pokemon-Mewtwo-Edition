@@ -159,7 +159,8 @@ function nombre(){
                  if(pokemons[i]["nombre"]==="Vileplume"){imagen=imagen9};
                  if(pokemons[i]["nombre"]==="Mew"){imagen=imagen10};
                  if(pokemons[i]["nombre"]==="Mew-two"){imagen=imagen11};
-                 document.write(`<span style="font-size: 30px;">${imagen}${pokemons[i]["nombre"]} ${pokemons[i]["hp"]} HP ${pokemons[i]["tipo"]} | </span>`);
+                document.write(`<div  style="display: inline-block;"><span style="font-size: 30px;">${imagen}${pokemons[i]["nombre"]} ${pokemons[i]["hp"]} HP ${pokemons[i]["tipo"]} | </span></div>`);
+
                 };
             let html=`<br><button style='font-size:30px' onclick="menu()">Volver</button`;
             document.write(html)
@@ -1017,7 +1018,7 @@ document.write("<br><span style='font-size:30px'>" + pokerival[1]["pokemon"] + "
     }
     
 //codigo de la pelea con mewtwo
-let pokeboss=[{nombre:"Mew-two",hp:3,tipo:"psi"}];
+let pokeboss=[{nombre:"Mew-two",hp:250,tipo:"psi"}];
 
 function duelomewtwointro(){
     document.body.innerHTML = "";
